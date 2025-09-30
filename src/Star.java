@@ -9,7 +9,14 @@ public class Star extends CelestialBodies {
     }
 
     @Override
-    public boolean habitabilityReport() {
-        return false;
+    public String getDescription() {
+        return "Name: " + getName() +
+                ", Diameter: " + getDiameter() + " million Km " +
+                ", Day Duration: " + getDayDuration() + " Hours " +
+                ", Temperature: " + temperature + " K " +
+                ", Spectral Type: " + spectralType;
     }
 }
+
+
+

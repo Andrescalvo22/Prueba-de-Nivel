@@ -22,15 +22,5 @@ public abstract class CelestialBodies {
         return dayDuration;
     }
 
-
-    @Override
-    public String toString() {
-        return "Celestial Body: " + name +
-                " , it has a diameter of: " + diameter + " Km" +
-                ", the duration day here is: " + dayDuration + " Hours";
-    }
-
-    public abstract boolean habitabilityReport();
-
-
+    public abstract String getDescription();
 }
