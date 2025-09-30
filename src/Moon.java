@@ -1,4 +1,4 @@
-public class Moon extends CelestialBodies implements HabitabilityReader {
+public class Moon extends CelestialBodies implements Habitable {
     private String orbitingPlanet;
     private boolean hasRockySurface;
 
@@ -6,6 +6,10 @@ public class Moon extends CelestialBodies implements HabitabilityReader {
         super(name, diameter, durationDay);
         this.orbitingPlanet = orbitingPlanet;
         this.hasRockySurface = hasRockySurface;
+    }
+
+    public String getOrbitingPlanet() {
+        return orbitingPlanet;
     }
 
     @Override
@@ -19,7 +23,7 @@ public class Moon extends CelestialBodies implements HabitabilityReader {
     }
 
     @Override
-    public String habitability() {
+    public String getHabitability() {
         return "Moon is habitable";
     }
 }
